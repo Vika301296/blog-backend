@@ -1,9 +1,9 @@
 {% extends 'blog-base.html' %}
 {% load static %}
-{% block title %}
-Sensive Blog - Contact
-{% endblock %}
-{% block content %}
+  {% block title %}
+    Sensive Blog - Contact
+  {% endblock %}
+  {% block content %}
     <!--================ Hero sm banner start =================-->  
     <section class="mb-30px">
       <div class="container">
@@ -12,7 +12,7 @@ Sensive Blog - Contact
             <h1>Contact Us</h1>
             <nav aria-label="breadcrumb" class="banner-breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
               </ol>
             </nav>
@@ -82,4 +82,4 @@ Sensive Blog - Contact
       </div>
     </section>
     <!-- ================ contact section end ================= -->
-{% endblock %}
+  {% endblock %}
